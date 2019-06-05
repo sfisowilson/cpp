@@ -2,6 +2,8 @@
 #define ZOMBIEEVENT_HPP
 	#include "Zombie.hpp"
 	#include <ostream>
+	#include <ctime>
+	#include <cstdlib>
 
 	class ZombieEvent
 	{
@@ -11,8 +13,13 @@
 		ZombieEvent(/* args */);
 		~ZombieEvent();
 		void setZombieType(std::string type);
-	};
-	
-	
+		void setZombieEventType(std::string type);
+		Zombie *newZombie(std::string name);
+		Zombie *randomChump();
+		std::string getZombieType();
 
-#endif // !ZOMBIEEVENT_HPP
+		std::string ZombieType;
+
+	};
+
+#endif
