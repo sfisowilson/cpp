@@ -3,10 +3,11 @@
 class Brain
 {
 private:
-    /* data */
+    std::string _brain_address;
 public:
-    Brain(/* args */);
+    Brain();
     ~Brain();
-    std::string identiy();
+    std::string identify();
+    void setAddress(void);
 };
 
